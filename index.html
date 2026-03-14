@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bowling Tool v66</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <div class="navlinks"></div>
+  <div class="container">
+    <div class="header">
+      <h1>Bowling Tool <span class="tag">v66</span></h1>
+      <div class="header-right">
+        <div class="small"><span class="tag">v66 clean build</span></div>
+        <div class="small">Direct-open build for laptop and iPhone transfer testing.</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h2>Bowler</h2>
+        <div class="small">Save your PAP, speed, rev rate, tilt, rotation, etc.</div>
+        <div style="margin-top:10px"><a class="btn" href="bowler.html">Open Bowler Info</a></div>
+      </div>
+      <div class="panel">
+        <h2>Arsenal</h2>
+        <div class="small">Load your ball list CSV → filter → matrix + table.</div>
+        <div style="margin-top:10px"><a class="btn" href="arsenal.html">Open Arsenal</a></div>
+      </div>
+      <div class="panel">
+        <h2>Analyze</h2>
+        <div class="small">Build / save an arsenal set, tournament bag helper.</div>
+        <div style="margin-top:10px"><a class="btn" href="analyze.html">Open Analyze</a></div>
+      </div>
+      <div class="panel">
+        <h2>Oil</h2>
+        <div class="small">Save oil patterns (length, volume, ratio, notes).</div>
+        <div style="margin-top:10px"><a class="btn" href="oil.html">Open Oil</a></div>
+      </div>
+      <div class="panel">
+        <h2>Friction Timing</h2>
+        <div class="small">HP / Response Time / Response Length sliders + matching balls.</div>
+        <div style="margin-top:10px"><a class="btn" href="lane.html">Open Friction Timing</a></div>
+      </div>
+      <div class="panel">
+        <h2>Game Day</h2>
+        <div class="small">Track shots + coaching + save session to Scores.</div>
+        <div style="margin-top:10px"><a class="btn" href="gameday.html">Open Game Day</a></div>
+      </div>
+      <div class="panel">
+        <h2>Scores</h2>
+        <div class="small">History: sessions by date/house/pattern + summary.</div>
+        <div style="margin-top:10px"><a class="btn" href="scores.html">Open Scores</a></div>
+      </div>
+      <div class="panel">
+        <h2>Backup / transfer data</h2>
+        <div class="small">Export your saved data on one device, then import that JSON file on another device.</div>
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+          <button class="btn" id="exportDataBtn" type="button">Export backup</button>
+          <input id="importDataFile" class="input" type="file" accept="application/json,.json" style="max-width:280px" />
+          <select id="importMode" class="input" style="max-width:180px">
+            <option value="replace">Import + replace</option>
+            <option value="merge">Import + merge</option>
+          </select>
+          <button class="btn secondary" id="importDataBtn" type="button">Import backup</button>
+        </div>
+        <div class="small" id="importExportStatus" style="margin-top:10px"></div>
+        <div class="small" style="margin-top:10px">Use <b>Import + replace</b> on a fresh phone. Use <b>Import + merge</b> only if you already have data on that device and want to keep object-based settings.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    BT.renderNav('home');
+    BT.wireImportExportUI();
+  </script>
+</body>
+</html>
