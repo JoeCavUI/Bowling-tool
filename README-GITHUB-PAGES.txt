@@ -1,0 +1,1 @@
+Upload these files to the root of your GitHub repo. The Home page now includes Export backup and Import backup for moving data between laptop and phone. You can import either the full JSON backup exported by this build or the raw key/value dump copied from browser local storage.
