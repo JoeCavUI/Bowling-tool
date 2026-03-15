@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bowling Tool</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <div class="navlinks"></div>
+  <div class="container">
+    <div class="header">
+      <h1>Bowling Tool</h1>
+      <div class="header-right">
+        <div class="small"><span class="tag">http://localhost:3000</span></div>
+        <div class="small">Run using the local server (recommended).</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h2>Bowler</h2>
+        <div class="small">Save your PAP, speed, rev rate, tilt, rotation, etc.</div>
+        <div style="margin-top:10px"><a class="btn" href="bowler.html">Open Bowler Info</a></div>
+      </div>
+      <div class="panel">
+        <h2>Arsenal</h2>
+        <div class="small">Load your ball list CSV → filter → matrix + table.</div>
+        <div style="margin-top:10px"><a class="btn" href="arsenal.html">Open Arsenal</a></div>
+      </div>
+      <div class="panel">
+        <h2>Analyze</h2>
+        <div class="small">Build / save an arsenal set, tournament bag helper.</div>
+        <div style="margin-top:10px"><a class="btn" href="analyze.html">Open Analyze</a></div>
+      </div>
+      <div class="panel">
+        <h2>Oil</h2>
+        <div class="small">Save oil patterns (length, volume, ratio, notes).</div>
+        <div style="margin-top:10px"><a class="btn" href="oil.html">Open Oil</a></div>
+      </div>
+      <div class="panel">
+        <h2>Friction Timing</h2>
+        <div class="small">HP / Response Time / Response Length sliders + matching balls.</div>
+        <div style="margin-top:10px"><a class="btn" href="lane.html">Open Friction Timing</a></div>
+      </div>
+      <div class="panel">
+        <h2>Game Day</h2>
+        <div class="small">Track shots + coaching + save session to Scores.</div>
+        <div style="margin-top:10px"><a class="btn" href="gameday.html">Open Game Day</a></div>
+      </div>
+      <div class="panel">
+        <h2>Scores</h2>
+        <div class="small">History: sessions by date/house/pattern + summary.</div>
+        <div style="margin-top:10px"><a class="btn" href="scores.html">Open Scores</a></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app_v63.js"></script>
+  <script>
+    BT.renderNav('home');
+  </script>
+</body>
+</html>
